@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Gitifier: Git commit notifier for MacOSX</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css">
+    <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("a[rel=lightbox]").fancybox({
+          changeSpeed: 200,
+          speedIn: 200,
+          speedOut: 200,
+          overlayColor: '#333',
+          cyclic: true
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <section id="logo">
+        <h1><a href="index.html">Gitifier</a></h1>
+        <h3>Git commit notifier for MacOSX</h3>
+      </section>
+      <section id="screenshot">
+        <a href="screen-growls.png" rel="lightbox"><img src="screen-growls.png"></a>
+      </section>
+      <section id="download">
+        <a href="http://github.com/downloads/jsuder/Gitifier/Gitifier-1.3.zip">
+          <img src="arrow.png" alt="">Download
+        </a>
+        <p class="description">Version 1.3, 952 KB. Runs on MacOSX 10.6 or later.</p>
+      </section>
+      <aside id="ribbon">
+        <a href="http://github.com/jsuder/Gitifier">
+          <img src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+        </a>
+      </aside>
+    </div>
+
+    <hr>
+
+    <div id="details">
+      <div>
+        <section id="features">
+          <p>Gitifier is an application that runs in your MacOSX menu bar
+            (<img src="gitifier-menu-icon.png" class="menu_icon" alt="+/-">)
+            and monitors Git repositories that you're interested in. When someone pushes a new commit,
+            it shows you a <a href="http://growl.info">Growl</a> notification.</p>
+          <p>All Git repositories are supported - whether it's on <a href="http://github.com">Github</a>
+            or <a href="http://gitorious.org">Gitorious</a>, private or public.</p>
+        </section>
+        <section id="screenshots">
+          <a href="screen-notifications.png" rel="lightbox"><img src="screen-notifications.png"></a>
+          <a href="screen-commit.png" rel="lightbox"><img src="screen-commit.png"></a>
+        </section>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p>Copyright © 2010-2013 <a href="http://psionides.eu">Jakub Suder</a>. &nbsp; Licensed under Eclipse Public License.</p>
+
+      <script type="text/javascript">
+      var clicky = { log: function(){ return; }, goal: function(){ return; }};
+      var clicky_site_id = 13976;
+      (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = ( document.location.protocol == 'https:' ? 'https://pmetrics.performancing.com/js' : 'http://pmetrics.performancing.com/js' );
+        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+      })();
+      </script>
+      <a title="" href="http://pmetrics.performancing.com/13976"></a>
+      <noscript><p><img alt="Performancing Metrics" width="1" height="1" src="http://pmetrics.performancing.com/13976ns.gif" /></p></noscript>
+
+    </footer>
+  </body>
+</html>
